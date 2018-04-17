@@ -1,0 +1,32 @@
+' Api Mysql pour Visual Basic 6
+' Traduction des fichiers mysql.h, mysql_com.h, and mysql_version.h
+'
+' Copyright (c) 2003 Romain Puyfoulhoux
+
+'Ce programme est un logiciel libre ; vous pouvez le redistribuer et/ou
+'le modifier conformément aux dispositions de la Licence Publique Générale GNU,
+'telle que publiée par la Free Software Foundation ; version 2 de la licence,
+'ou encore (à votre choix) toute version ultérieure.
+
+'Ce programme est distribué dans l'espoir qu'il sera utile, mais
+'SANS AUCUNE GARANTIE;sans même la garantie implicite de
+'COMMERCIALISATION ou D'ADAPTATION A UN OBJET PARTICULIER.
+'Pour plus de détail, voir la Licence Publique Générale GNU.
+
+'Vous devez avoir reçu un exemplaire de la Licence Publique Générale GNU
+'en même temps que ce programme ; si ce n'est pas le cas,
+'écrivez à la Free Software Foundation
+'Inc., 675 Mass Ave, Cambridge, MA 02139, Etats-Unis.
+
+Option Explicit
+
+'** Version numbers for protocol and mysqld **
+
+Public Const PROTOCOL_VERSION = 10
+Public Const MYSQL_SERVER_VERSION = "3.23.49"
+Public Const MYSQL_SERVER_SUFFIX = ""
+Public Const FRM_VER = 6
+Public Const MYSQL_VERSION_ID = 32349
+Public Const MYSQL_PORT = 3306
+Public Const MYSQL_UNIX_ADDR = "/tmp/mysql.sock"
+
