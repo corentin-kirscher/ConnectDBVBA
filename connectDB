@@ -1,0 +1,27 @@
+Sub connectionDB()
+    'Declaration des variables
+    Dim id As String
+    Dim bdname As String
+    Dim pwd As String
+    Dim host As String
+    Dim pMySQL As Long
+    pMySQL = mysql_init(0)
+        
+    Dim pMyErrorMsg As Long, myErrorMsg As String
+
+    pMyErrorMsg = mysql_error(pMySQL)
+    'myErrorMsg = CopieChaine(pMyErrorMsg)
+    
+    'Affectation des variables
+    id = "144379"
+    bdname = "kirscherco_projetjs"
+    pwd = "1345678"
+    host = "mysql-kirscherco.alwaysdata.net"
+    
+    'Connection à la BD
+    If mysql_real_connect(pMySQL, host, id, pwd, bdname, 0, 0, 0) = 0 Then
+        MsgBox (pMyErrorMsg)
+    Else
+        MsgBox "Succes"
+    End If
+End Sub
